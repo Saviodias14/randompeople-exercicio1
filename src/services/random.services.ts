@@ -6,7 +6,7 @@ export async function getRandomPeople(){
     if (!result){
         throw NotFound()
     }
-    const randomNumber = Math.floor(Math.random()* (result.length-1))
+    const randomNumber = Math.floor(Math.random()* (result.length))
     return result[randomNumber]
 }
 
